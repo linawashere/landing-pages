@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Article</title>
+</head>
+
+<body>
+    <main class="main">
+        <article class="article">
+            <div class="article__header">
+                <h1 class="text-heading-1">Understanding CSS rem Units</h1>
+                <div class="article__meta">
+                    Published: <span> December 2024 |</span> Reading time: <span>5 minutes</span>
+                </div>
+            </div>
+            <div class="article__content">
+                <section class="article__paragraph">
+                    <p>The <code class="article__paragraph-code">rem</code> unit in CSS stands for "root em" and
+                        represents a scalable unit of measurement that's relative to the root element's font size.
+                        Unlike <code class="article__paragraph-code">em</code> units, which are relative to their parent
+                        element's font size, <code class="article__paragraph-code">rem</code> units are always relative
+                        to the HTML element's font size.</p>
+                </section>
+                <section class="article__note">
+                    <p>Try changing the font-size property in the HTML selector above from 16px to different values to
+                        see how the entire layout scales proportionally!</p>
+                </section>
+                <h2 class="text-heading-2">Why Use rem Units?</h2>
+                <section class="article__paragraph">
+                    <p>The <code class="article__paragraph-code">rem</code> unit offers several advantages over fixed units like pixels:</p>
+                    <ul class="article__paragraph-list">
+                        <li class="paragraph__list-item">Scalability: <span>The entire layout scales proportionally when the root font size changes</span></li>
+                        <li class="paragraph__list-item">Accessibility: <span>Users can adjust their browser's default font size, and your layout will respect their preferences</span></li>
+                        <li class="paragraph__list-item">Consistency: <span>All measurements are relative to a single reference point</span></li>
+                        <li class="paragraph__list-item">Maintainability:<span> Easy to adjust the overall scale of your design by changing just one value</span></li>
+                    </ul>
+                </section>
+                <h3 class="text-heading-3">Common Use Cases</h3>
+                <section class="article__paragraph">
+                    <p>The <code class="article__paragraph-code">rem</code> unit is particularly useful for:</p>
+                    <ul class="article__paragraph-list">
+                        <li class="paragraph__list-item">Font sizing across different heading levels</li>
+                        <li class="paragraph__list-item">Margins and padding that should scale with text size</li>
+                        <li class="paragraph__list-item">Component spacing and layout dimensions</li>
+                        <li class="paragraph__list-item">Media query breakpoints for responsive design</li>
+                    </ul>
+                </section>
+                <h3 class="text-heading-3">Best Practices</h3>
+                <section class="article__paragraph">
+                    <p>When working with <code class="article__paragraph-code">rem</code> units, consider these guidelines:</p>
+                    <p>Set your root font size to a reasonable base value, typically 16px. This serves as your reference point for all <code class="article__paragraph-code">rem</code> calculations. Use <code class="article__paragraph-code">rem</code>  for most sizing properties, but consider <code class="article__paragraph-code">em</code>  for properties that should be relative to the local font size, such as line-height.</p>
+                </section>
+            </div>
+        </article>
+    </main>
+</body>
+
+</html>
