@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Table</title>
+</head>
+
+<body>
+    <main class="main">
+        <!-- <table class="table">
+            <thead>
+                <tr class="table__row table__row-header">
+                    <th class="table__header width-1">Priority</th>
+                    <th class="table__header width-2">Selector</th>
+                    <th class="table__header width-3">Demo Element</th>
+                    <th class="table__header width-4">Description</th>
+                    <th class="table__header width-5">Resulting Color</th>
+                </tr>
+            </thead>
+            <tbody class="table__body">
+                <tr class="table__row">
+                    <td class="table__data text-body-base border-bottom text-body-digits table__priority" style="height: 90.5px;">0,0,0,1</td>
+                    <td class="table__data text-body-selector border-all table__selector" style="height: 90.5px;">div</td>
+                    <td class="table__data text-body-base border-bottom table__demo">
+                        <div class="table__demo-square"></div>
+                    </td>
+                    <td class="table__data table__description border-bottom text-body-description" style="height: 90.5px;">Element selector</td>
+                    <td class="table__data table__result text-body-base border-bottom" style="height: 90.5px;">Light red</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__data text-body-base border-bottom text-body-digits table__priority"
+                        style="position: relative; top: -1px;">0,0,0,2</td>
+                    <td class="table__data text-body-selector border-all table__selector"
+                        style="position: relative; top: -1px;">td > span</td>
+                    <td class="table__data text-body-base border-bottom table__demo">
+                        <div class="table__demo-square"></div>
+                    </td>
+                    <td class="table__data table__description border-bottom text-body-description">Element's child</td>
+                    <td class="table__data table__result text-body-base border-bottom">Light sky blue</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__data text-body-base border-bottom text-body-digits table__priority"
+                        style="position: relative; top: -2px;">0,0,1,0</td>
+                    <td class="table__data text-body-selector border-all table__selector"
+                        style="position: relative; top: -3px;">.demo</td>
+                    <td class="table__data text-body-base border-bottom table__demo">
+                        <div class="table__demo-square" style="position: relative; top: -2px;"></div>
+                    </td>
+                    <td class="table__data table__description border-bottom text-body-description">Class selector</td>
+                    <td class="table__data table__result text-body-base border-bottom">Light blue</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__data text-body-base border-bottom text-body-digits table__priority"
+                        style="position: relative; top: -3px;">0,0,1,1</td>
+                    <td class="table__data text-body-selector border-all table__selector"
+                        style="position: relative; top: -4px;">div.green</td>
+                    <td class="table__data text-body-base border-bottom table__demo">
+                        <div class="table__demo-square" style="position: relative; top: -3px;"></div>
+                    </td>
+                    <td class="table__data table__description border-bottom text-body-description">Element + class
+                        selector</td>
+                    <td class="table__data table__result text-body-base border-bottom">Light green</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__data text-body-base border-bottom text-body-digits table__priority"
+                        style="position: relative; top: -4px;">0,0,2,0</td>
+                    <td class="table__data text-body-selector border-all table__selector"
+                        style="position: relative; top: -4px;">.demo.blue</td>
+                    <td class="table__data text-body-base border-bottom table__demo">
+                        <div class="table__demo-square" style="position: relative; top: -4px;"></div>
+                    </td>
+                    <td class="table__data table__description border-bottom text-body-description">Two classes</td>
+                    <td class="table__data table__result text-body-base border-bottom">Light cyan</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__data text-body-base border-bottom text-body-digits table__priority"
+                        style="position: relative; top: -5px;">0,0,2,1</td>
+                    <td class="table__data text-body-selector border-all table__selector"
+                        style="position: relative; top: -5px;">div.demo.yellow</td>
+                    <td class="table__data text-body-base border-bottom table__demo">
+                        <div class="table__demo-square" style="position: relative; top: -5px;"></div>
+                    </td>
+                    <td class="table__data table__description border-bottom text-body-description">Element + two classes
+                    </td>
+                    <td class="table__data table__result text-body-base border-bottom">Light yellow</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__data text-body-base border-bottom text-body-digits table__priority"
+                        style="position: relative; top: -6px;">0,1,0,0</td>
+                    <td class="table__data text-body-selector border-all table__selector"
+                        style="position: relative; top: -6px;">#special</td>
+                    <td class="table__data text-body-base border-bottom table__demo">
+                        <div class="table__demo-square" style="position: relative; top: -6px;"></div>
+                    </td>
+                    <td class="table__data table__description border-bottom text-body-description">ID selector</td>
+                    <td class="table__data table__result text-body-base border-bottom">Light pink</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__data text-body-base border-bottom text-body-digits table__priority"
+                        style="position: relative; top: -7px;">0,1,1,0</td>
+                    <td class="table__data text-body-selector border-all table__selector"
+                        style="position: relative; top: -8px;">#special.purple</td>
+                    <td class="table__data text-body-base border-bottom table__demo">
+                        <div class="table__demo-square" style="position: relative; top: -7px;"></div>
+                    </td>
+                    <td class="table__data table__description border-bottom text-body-description">ID + class</td>
+                    <td class="table__data table__result text-body-base border-bottom">Light purple</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__data text-body-base border-bottom text-body-digits table__priority"
+                        style="position: relative; top: -8px;">0,1,1,1</td>
+                    <td class="table__data text-body-selector border-all table__selector"
+                        style="position: relative; top: -9px;">div#special.orange</td>
+                    <td class="table__data text-body-base border-bottom table__demo">
+                        <div class="table__demo-square" style="position: relative; top: -8px;"></div>
+                    </td>
+                    <td class="table__data table__description border-bottom text-body-description">Element + ID + class
+                    </td>
+                    <td class="table__data table__result text-body-base border-bottom">Light orange</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__data text-body-base border-bottom text-body-digits table__priority"
+                        style="position: relative; top: -9px;">0,2,0,0</td>
+                    <td class="table__data text-body-selector border-all table__selector"
+                        style="position: relative; top: -10px;">#special#unique</td>
+                    <td class="table__data text-body-base border-bottom table__demo">
+                        <div class="table__demo-square" style="position: relative; top: -9px;"></div>
+                    </td>
+                    <td class="table__data table__description border-bottom text-body-description" style="position: relative; top: -9px">Two IDs</td>
+                    <td class="table__data table__result text-body-base border-bottom">Pink</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__data text-body-base border-bottom text-body-digits table__priority"
+                        style="position: relative; top: -10px;">1,0,0,0</td>
+                    <td class="table__data text-body-selector border-all table__selector"
+                        style="position: relative; top: -10px;">style="background-color: #b39ddb"</td>
+                    <td class="table__data text-body-base border-bottom table__demo">
+                        <div class="table__demo-square"style="position: relative; top: -10px;"></div>
+                    </td>
+                    <td class="table__data table__description border-bottom text-body-description" style="position: relative; top: -10px">Inline styles</td>
+                    <td class="table__data table__result text-body-base border-bottom">Purple</td>
+                </tr>
+                <tr class="table__row">
+                    <td class="table__data text-body-base border-bottom text-body-digits table__priority"
+                        style="position: relative; top: -11px; text-align: center;">∞</td>
+                    <td class="table__data text-body-selector border-all table__selector"
+                        style="position: relative; top: -11px;">.important-demo { color: green !important; }</td>
+                    <td class="table__data text-body-base border-bottom table__demo">
+                        <div class="table__demo-square" style="position: relative; top: -11px;"></div>
+                    </td>
+                    <td class="table__data table__description border-bottom text-body-description" style="position: relative; top: -11px;letter-spacing: -0.15px;">!important
+                        declaration overrides everything</td>
+                    <td class="table__data table__result text-body-base border-bottom" style="position: relative; top: -11px; left: 13px; letter-spacing: 0.2px;">Green (!important)</td>
+                </tr>
+            </tbody>
+        </table> -->
+        <div class="table">
+            <div class="row header text-header">
+                <div class="cell priority">Priority</div>
+                <div class="cell selector">Selector</div>
+                <div class="cell demo">Demo Element</div>
+                <div class="cell desc">Description</div>
+                <div class="cell result">Resulting Color</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                            first
+                ">0,0,0,1</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                            first
+                            border-all
+                ">div</div>
+                <div class="cell
+                            demo
+                            first
+                ">
+                    <div class="square square-1 first"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                            first
+                ">Element selector</div>
+                <div class="cell
+                            result
+                            text-body-base
+                            first
+                ">Light red</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">0,0,0,2</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                            border-all
+                ">td > span</div>
+                <div class="cell
+                            demo
+                ">
+                    <div class="square square-1"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                ">Element's child</div>
+                <div class="cell
+                            result
+                            text-body-base
+                ">Light sky blue</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">0,0,1,0</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                ">.demo</div>
+                <div class="cell
+                            demo
+                ">
+                    <div class="square square-1"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                ">Class selector</div>
+                <div class="cell
+                            result
+                            text-body-base
+                ">Light blue</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">0,0,1,1</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                ">div.green</div>
+                <div class="cell
+                            demo
+                ">
+                    <div class="square square-1"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                ">Element + class selector</div>
+                <div class="cell
+                            result
+                            text-body-base
+                ">Light green</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">0,0,2,0</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                ">.demo.blue</div>
+                <div class="cell
+                            demo
+                ">
+                    <div class="square square-1"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                ">Two classes</div>
+                <div class="cell
+                            result
+                            text-body-base
+                ">Light cyan</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">0,0,2,1</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                ">div.demo.yellow</div>
+                <div class="cell
+                            demo
+                ">
+                    <div class="square square-1"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                ">Element + two classes</div>
+                <div class="cell
+                            result
+                            text-body-base
+                ">Light yellow</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">0,1,0,0</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                ">#special</div>
+                <div class="cell
+                            demo
+                ">
+                    <div class="square square-1"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                ">ID selector</div>
+                <div class="cell
+                            result
+                            text-body-base
+                ">Light pink</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">0,1,1,0</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                ">#special.purple</div>
+                <div class="cell
+                            demo
+                ">
+                    <div class="square square-1"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                ">ID + class</div>
+                <div class="cell
+                            result
+                            text-body-base
+                ">Light purple</div>
+            </div>
+
+             <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">0,1,1,1</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                ">div#special.orange</div>
+                <div class="cell
+                            demo
+                ">
+                    <div class="square square-1"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                " style="letter-spacing: 0.2px;">Element + ID + class</div>
+                <div class="cell
+                            result
+                            text-body-base
+                ">Light orange</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">0,2,0,0</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                ">#special#unique</div>
+                <div class="cell
+                            demo
+                ">
+                    <div class="square square-1"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                ">Two IDs</div>
+                <div class="cell
+                            result
+                            text-body-base
+                ">Pink</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">1,0,0,0</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                ">style="background-color: #b39ddb"</div>
+                <div class="cell
+                            demo
+                ">
+                    <div class="square square-1"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                ">Inline styles</div>
+                <div class="cell
+                            result
+                            text-body-base
+                ">Purple</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">∞</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                ">.important-demo { color: green !important; }</div>
+                <div class="cell
+                            demo
+                ">
+                    <div class="square square-1"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                " style="letter-spacing: -0.08px;">!important
+                        declaration overrides everything</div>
+                <div class="cell
+                            result
+                            text-body-base
+                " style="letter-spacing: 0.2px;">Green (!important)</div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
