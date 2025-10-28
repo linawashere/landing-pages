@@ -100,7 +100,7 @@ html {
 }
 
 .cell.first {
-    transform: translateX(13px) translateY(2px);
+    transform: translateX(13px) translateY(1px);
 }
 
 .priority {
@@ -110,33 +110,108 @@ html {
     transform: translateX(13px) translateY(18px);
 }
 
+.priority::after {
+    content: '';
+    display: block;
+    width: 100.36px;
+    height: 1px;
+    color: rgba(221, 221, 221, 1);
+    border-bottom: 1px solid;
+    transform: translateX(-10px) translateY(31px);
+}
+
+.demo::after {
+    content: '';
+    display: block;
+    width: 150.03px;
+    height: 1px;
+    color: rgba(221, 221, 221, 1);
+    border-bottom: 1px solid;
+    transform: translateX(-42px) translateY(15px);
+}
+
+.desc::after {
+    content: '';
+    display: block;
+    width: 300px;
+    height: 1px;
+    color: rgba(221, 221, 221, 1);
+    border-bottom: 1px solid;
+    transform: translateX(-8px) translateY(34px);
+}
+
+.result::after {
+    content: '';
+    display: block;
+    width: 172.47px;
+    height: 1px;
+    color: rgba(221, 221, 221, 1);
+    border-bottom: 1px solid;
+    transform: translateX(-10px) translateY(31px);
+}
+
+.first.priority::after {
+    transform: translateX(-17px) translateY(31px);
+}
+
+.first.demo::after {
+    transform: translateX(-10px) translateY(12px);
+}
+
+.first.desc::after {
+    transform: translateX(-10px) translateY(31px);
+}
+
+.first.result::after {
+    transform: translateX(-10px) translateY(30px);
+}
+
+.header>.priority::after,
+.header>.demo::after,
+.header>.desc::after,
+.header>.result::after {
+    content: '';
+    display: none;
+}
+
 .priority.first {
     width: 100.36px;
     height: 90.5px;
     padding: 31.21px 16.83px 33.29px 16.31px;
 }
 
-.header > .cell {
+.header>.cell {
     transform: translateY(0px);
 }
 
 .selector {
     width: 451.55px;
     height: 91px;
-    transform: translateX(15px) translateY(19px);
+    /* transform: translateX(15px) translateY(19px); */
+}
 
+.cell.selector span {
+    display: block;
+    margin-left: 13px;
+    margin-top: 2px;
+    transform: translateX(-11px) translateY(15px);
+}
+
+.first.selector span {
+    transform: translateX(-14px) translateY(-3px);
 }
 
 .selector.first {
     width: 451.55px;
     height: 90.5px;
     padding: 33.55px 13px 32.95px 13px;
+    transform: translateY(0px) translateX(13px);
 }
 
 .demo {
     width: 150.03px;
     height: 91px;
-    transform: translateX(47px);
+    transform: translateX(48px);
 }
 
 .demo.first {
@@ -183,8 +258,8 @@ html {
 .border-all {
     border-radius: 5px;
     border: 1px solid rgba(222, 226, 230, 1);
+    transform: translateX(13px);
 }
-
 
 /* .border-bottom {
     border-bottom: 1px solid rgba(221, 221, 221, 1);
