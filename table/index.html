@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Table</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="table">
+            <div class="row header text-header">
+                <div class="cell priority">Priority</div>
+                <div class="cell selector">Selector</div>
+                <div class="cell demo-el">Demo Element</div>
+                <div class="cell desc">Description</div>
+                <div class="cell result">Resulting Color</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                            first
+                ">0,0,0,1</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                            first
+                            border-all
+                "><span>div</span></div>
+                <div class="cell
+                            demo-el
+                            first
+                ">
+                    <div class="square first"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                            first
+                ">Element selector</div>
+                <div class="cell
+                            result
+                            text-body-base
+                            first
+                ">Light red</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">0,0,0,2</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                            border-all
+                "><span>td > span</span></div>
+                <div class="cell
+                            demo-el
+                            light-sky-blue
+                ">
+                    <div class="square"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                ">Element's child</div>
+                <div class="cell
+                            result
+                            text-body-base
+                ">Light sky blue</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">0,0,1,0</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                            border-all
+                "><span>.demo</span></div>
+                <div class="cell
+                            demo-el
+                ">
+                    <div class="square demo"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                ">Class selector</div>
+                <div class="cell
+                            result
+                            text-body-base
+                ">Light blue</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">0,0,1,1</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                            border-all
+                "><span>div.green</span></div>
+                <div class="cell
+                            demo-el
+                ">
+                    <div class="square green"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                ">Element + class selector</div>
+                <div class="cell
+                            result
+                            text-body-base
+                ">Light green</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">0,0,2,0</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                            border-all
+                "><span>.demo.blue</span></div>
+                <div class="cell
+                            demo-el
+                ">
+                    <div class="square demo blue"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                ">Two classes</div>
+                <div class="cell
+                            result
+                            text-body-base
+                ">Light cyan</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">0,0,2,1</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                            border-all
+                "><span>div.demo.yellow</span></div>
+                <div class="cell
+                            demo-el
+                ">
+                    <div class="square demo yellow"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                ">Element + two classes</div>
+                <div class="cell
+                            result
+                            text-body-base
+                ">Light yellow</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">0,1,0,0</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                            border-all
+                "><span>#special</span></div>
+                <div class="cell
+                            demo-el
+                ">
+                    <div class="square" id="special"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                ">ID selector</div>
+                <div class="cell
+                            result
+                            text-body-base
+                ">Light pink</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">0,1,1,0</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                            border-all
+                "><span>#special.purple</span></div>
+                <div class="cell
+                            demo-el
+                ">
+                    <div class="square purple" id="special"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                ">ID + class</div>
+                <div class="cell
+                            result
+                            text-body-base
+                ">Light purple</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">0,1,1,1</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                            border-all
+                "><span>div#special.orange</span></div>
+                <div class="cell
+                            demo-el
+                ">
+                    <div class="square orange" id="special"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                " style="letter-spacing: 0.2px;">Element + ID + class</div>
+                <div class="cell
+                            result
+                            text-body-base
+                ">Light orange</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">0,2,0,0</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                            border-all
+                "><span>#special#unique</span></div>
+                <div class="cell
+                            demo-el
+                ">
+                    <div class="square" id="special"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                ">Two IDs</div>
+                <div class="cell
+                            result
+                            text-body-base
+                ">Pink</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">1,0,0,0</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                            border-all
+                "><span>style="background-color: #b39ddb"</span></div>
+                <div class="cell
+                            demo-el
+                ">
+                    <div class="square" style="background-color: #b39ddb"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                ">Inline styles</div>
+                <div class="cell
+                            result
+                            text-body-base
+                ">Purple</div>
+            </div>
+
+            <div class="row">
+                <div class="cell
+                            priority
+                            text-body-digits
+                ">∞</div>
+                <div class="cell
+                            selector
+                            text-body-selector
+                            border-all
+                "><span>.important-demo { color: green !important; }</span></div>
+                <div class="cell
+                            demo-el
+                ">
+                    <div class="square important-demo"></div>
+                </div>
+                <div class="cell
+                            desc
+                            text-body-description
+                " style="letter-spacing: -0.08px;">!important
+                    declaration overrides everything</div>
+                <div class="cell
+                            result
+                            text-body-base
+                " style="letter-spacing: 0.2px;">Green (!important)</div>
+            </div>
+            <div style="position: absolute; top: -9999px; left: -9999px; visibility: hidden;">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="cell selector">
+                                <span class="span">td > span</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
