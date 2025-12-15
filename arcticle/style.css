@@ -111,6 +111,18 @@ html {
     gap: 1rem;
 }
 
+.justified-text {
+    text-align: justify;
+    display: none;
+}
+
+.text-not-justified {
+    text-align: left;
+    display: block;
+}
+
+
+
 .article__paragraph {
     line-height: 1.6rem;
 }
